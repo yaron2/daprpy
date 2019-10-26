@@ -13,7 +13,7 @@ while True:
     ]
     
     start_time = time.time()
-    response = requests.post("http://localhost:3500/v1.0/state", json=state)
+    response = requests.post("http://127.0.0.1:3500/v1.0/state", json=state)
     elapsed_time = time.time() - start_time
     counter += 1
     print(str(counter) + " elapsed: " + str(elapsed_time * 1000) + "ms", flush=True)
